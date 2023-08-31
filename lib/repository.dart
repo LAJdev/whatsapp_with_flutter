@@ -3,13 +3,13 @@ import 'package:flutter/material.dart';
 import 'class.dart';
 
 List<Contact> contactlist = [
-  Contact("Week-end", "phonenumber", "Sleeping", "🌎"),
-  Contact("João Pereira", "phonenumber", "battery low...", "👨🏼‍🎨"),
-  Contact("Léna Simon", "phonenumber", "On vacation", "👩🏼‍🔧"),
-  Contact("Famille", "phonenumber", "Don't disturb!!", "👨‍👩‍👧‍👧"),
-  Contact("Alicia Garcia", "phonenumber", "Sleeping", "🙎‍♀️"),
-  Contact("Brunch club !", "phonenumber", "Sleeping", "🍱"),
-  Contact("Les gâteaux de Sandra", "phonenumber", "Watching TV", "🍰"),
+  Contact("001","Week-end", "phonenumber", "Sleeping", "🌎"),
+  Contact("002","João Pereira", "phonenumber", "battery low...", "👨🏼‍🎨"),
+  Contact("003","Léna Simon", "phonenumber", "On vacation", "👩🏼‍🔧"),
+  Contact("004","Famille", "phonenumber", "Don't disturb!!", "👨‍👩‍👧‍👧"),
+  Contact("005","Alicia Garcia", "phonenumber", "Sleeping", "🙎‍♀️"),
+  Contact("006","Brunch club !", "phonenumber", "Sleeping", "🍱"),
+  Contact("007","Les gâteaux de Sandra", "phonenumber", "Watching TV", "🍰"),
 ];
 
 List<Message> messagereceived = [

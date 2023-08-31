@@ -10,12 +10,13 @@ class Status {
 }
 
 class Contact {
+  String id;
   String name;
   String phonenumber;
   String status;
   String image;
 
-  Contact(this.name, this.phonenumber, this.status, this.image);
+  Contact(this.id,this.name, this.phonenumber, this.status, this.image);
 }
 
 class Message {

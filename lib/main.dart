@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'callsPage.dart';
+import 'constant.dart';
+import 'contactdiscussionPage.dart';
 import 'discussionPage.dart';
 import 'statusPage.dart';
 
@@ -12,8 +14,20 @@ class MainApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      home: WhatsAppWidget(),
+    return MaterialApp(
+      // color: Colors.amber,
+
+      theme: ThemeData(
+          primarySwatch: colorpalette,
+          primaryColor: colorpalette[500],
+          floatingActionButtonTheme: const FloatingActionButtonThemeData(
+              backgroundColor: Colors.amber),
+          appBarTheme: AppBarTheme(color: colorpalette.shade500)),
+
+      home: const WhatsAppWidget(),
+      routes: {
+        "/contactdiscussionpage": (context) => const ContactDiscussionPage(),
+      },
       // home: MyWidget(),
     );
   }

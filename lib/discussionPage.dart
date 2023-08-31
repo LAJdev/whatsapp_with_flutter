@@ -13,8 +13,13 @@ class DiscussionWidget extends StatelessWidget {
       child: ListView.separated(
         itemCount: messagereceived.length,
         itemBuilder: (context, index) {
-          return TileDiscussionWidget(
-            message: messagereceived[index],
+          return GestureDetector(
+            onTap: (){
+              Navigator.of(context).pushNamed("/contactdiscussionpage");
+            },
+            child: TileDiscussionWidget(
+              message: messagereceived[index],
+            ),
           );
         },
         separatorBuilder: (BuildContext context, int index) {
